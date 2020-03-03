@@ -3,6 +3,8 @@
     package="com.example.prety_basic">
     <uses-permission android:name="android.permission.SEND_SMS"/>
     <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+    <uses-permission android:name = "android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name = "android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".LocationService"/>
     </application>
-
 </manifest>
